@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miguel Henrique Oliveira Santos</title>
+<meta name="description" content="Miguel Henrique Oliveira Santos, estudante de Engenharia de Software. Basquete, academia e linguagens de programação.">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body id="inicio">
+
+<div class="painel">
+
+  <aside class="lateral">
+    <div class="lateral-topo">
+      <figure class="retrato">
+        <img src="img/miguel.jpg" alt="Foto de Miguel Henrique Oliveira Santos" width="300" height="300">
+      </figure>
+      <h1 class="nome">Miguel Henrique<br>Oliveira Santos</h1>
+      <p class="cargo">Estudante de Engenharia de Software</p>
+      <div class="placar">
+        <div class="placar-item">
+          <span>RGM</span>
+          <strong>47174480</strong>
+        </div>
+        <div class="placar-item">
+          <span>Semestre</span>
+          <strong>02</strong>
+        </div>
+      </div>
+    </div>
+
+    <button class="abrir" id="abrir" aria-expanded="false" aria-controls="navegacao">
+      <i class="fa-solid fa-bars"></i> Menu
+    </button>
+
+    <nav class="navegacao" id="navegacao">
+      <a href="#sobre"><i class="fa-solid fa-user"></i> Sobre</a>
+      <a href="#formacao"><i class="fa-solid fa-graduation-cap"></i> Formação</a>
+      <a href="#linguagens"><i class="fa-solid fa-code"></i> Linguagens</a>
+      <a href="#rotina"><i class="fa-solid fa-dumbbell"></i> Rotina</a>
+      <a href="#quadra"><i class="fa-solid fa-basketball"></i> Quadra</a>
+      <a href="#metas"><i class="fa-solid fa-flag-checkered"></i> Metas</a>
+      <a href="#contato"><i class="fa-regular fa-envelope"></i> Contato</a>
+    </nav>
+
+  </aside>
+
+  <main class="miolo">
+
+    <section class="bloco" id="sobre">
+      <h2 class="titulo"><span class="marcador"></span> Sobre</h2>
+      <p class="chamada">Entrei em Engenharia de Software porque sempre gostei de entender como as coisas funcionam por dentro, e programar é a forma mais direta que eu achei de fazer isso.</p>
+      <p>Estudo linguagens de programação por conta própria, uma de cada vez. Não tento aprender tudo de uma vez: pego uma, fico nela até conseguir montar alguma coisa que roda, e só então passo para a próxima. É assim que eu percebo como cada linguagem resolve o mesmo problema de um jeito diferente.</p>
+      <p>O que sobra do dia eu divido entre a academia e o basquete. As duas coisas me ensinaram a mesma lição que o código ensina: ninguém acerta de primeira, e o que faz diferença é voltar no dia seguinte e tentar de novo.</p>
+    </section>
+
+    <section class="bloco" id="formacao">
+      <h2 class="titulo"><span class="marcador"></span> Formação</h2>
+      <ol class="trilha">
+        <li>
+          <span class="trilha-etapa">Em andamento</span>
+          <h3>Engenharia de Software</h3>
+          <p>Segundo semestre. Até aqui vi lógica de programação, algoritmos, estrutura de dados e desenvolvimento web, que é a parte que mais me pegou.</p>
+        </li>
+        <li>
+          <span class="trilha-etapa">Por fora da grade</span>
+          <h3>Estudo por conta própria</h3>
+          <p>Uma linguagem por vez, no meu ritmo, até conseguir montar algo que funcione de ponta a ponta em vez de só acompanhar tutorial.</p>
+        </li>
+        <li>
+          <span class="trilha-etapa">Primeiros projetos</span>
+          <h3>Trabalhos da faculdade</h3>
+          <p>Sites e exercícios em HTML, CSS e JavaScript, incluindo esta página, que montei do zero com Bootstrap.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="bloco" id="linguagens">
+      <h2 class="titulo"><span class="marcador"></span> Linguagens e ferramentas</h2>
+      <p class="apoio">O que eu já peguei na faculdade e por fora dela.</p>
+
+      <div class="filtros" id="filtros">
+        <button class="filtro ativo" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="web">Web</button>
+        <button class="filtro" data-filtro="linguagem">Linguagens</button>
+        <button class="filtro" data-filtro="ferramenta">Ferramentas</button>
+      </div>
+
+      <div class="sumula">
+        <div class="sumula-cabeca">
+          <span>Tecnologia</span>
+          <span>Onde eu uso</span>
+          <span>Tipo</span>
+        </div>
+
+        <div class="sumula-linha item" data-tipo="web">
+          <span class="tec"><i class="fa-brands fa-html5"></i> HTML</span>
+          <span>A estrutura de tudo que eu monto na web</span>
+          <span class="etiqueta">Web</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="web">
+          <span class="tec"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span>Onde eu passo mais tempo ajustando até ficar certo</span>
+          <span class="etiqueta">Web</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="web">
+          <span class="tec"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span>Dá movimento à página, o meu foco agora</span>
+          <span class="etiqueta">Web</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="web">
+          <span class="tec"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+          <span>Resolve grade e responsivo sem reescrever tudo</span>
+          <span class="etiqueta">Web</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="linguagem">
+          <span class="tec"><i class="fa-brands fa-python"></i> Python</span>
+          <span>Testar ideia rápida e treinar lógica</span>
+          <span class="etiqueta">Linguagem</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="linguagem">
+          <span class="tec"><i class="fa-brands fa-java"></i> Java</span>
+          <span>Onde eu entendi orientação a objetos</span>
+          <span class="etiqueta">Linguagem</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="linguagem">
+          <span class="tec"><i class="fa-solid fa-terminal"></i> C</span>
+          <span>A que mais me fez apanhar e mais me ensinou</span>
+          <span class="etiqueta">Linguagem</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="ferramenta">
+          <span class="tec"><i class="fa-brands fa-git-alt"></i> Git e GitHub</span>
+          <span>Versionar o que eu faço e não perder trabalho</span>
+          <span class="etiqueta">Ferramenta</span>
+        </div>
+        <div class="sumula-linha item" data-tipo="ferramenta">
+          <span class="tec"><i class="fa-solid fa-database"></i> SQL</span>
+          <span>Consulta e organização de dados</span>
+          <span class="etiqueta">Ferramenta</span>
+        </div>
+      </div>
+
+      <p class="vazio" id="vazio" hidden>Nenhum item nessa categoria.</p>
+    </section>
+
+    <section class="bloco" id="rotina">
+      <h2 class="titulo"><span class="marcador"></span> Como eu divido o tempo</h2>
+      <div class="divisao">
+        <article>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Faculdade e estudo</h3>
+          <p>As aulas do curso mais o tempo que eu reservo para estudar linguagem por fora.</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-dumbbell"></i>
+          <h3>Academia</h3>
+          <p>Treino de musculação na semana. Gosto da rotina e de ver o progresso sem atalho.</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-basketball"></i>
+          <h3>Quadra</h3>
+          <p>Jogo sempre que aparece quadra e acompanho os campeonatos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bloco bloco-escuro" id="quadra">
+      <h2 class="titulo titulo-claro"><span class="marcador"></span> O que o basquete me ensinou</h2>
+      <p>No basquete ninguém acerta todo arremesso. Você erra na frente de todo mundo, pega o rebote e tenta de novo no lance seguinte. Demorei para entender que programar é a mesma coisa: o código quebra, você lê o erro e ajusta.</p>
+      <p>Jogo é jogo coletivo, então também aprendi que ninguém ganha sozinho. Nos trabalhos em grupo da faculdade é o que mais me ajuda: saber a hora de pedir o passe e a hora de dar.</p>
+      <blockquote class="citacao">Errar faz parte. Parar de tentar é que não.</blockquote>
+    </section>
+
+    <section class="bloco" id="metas">
+      <h2 class="titulo"><span class="marcador"></span> O que vem agora</h2>
+      <ul class="metas">
+        <li>
+          <h3>Fechar a base</h3>
+          <p>Terminar o ciclo de fundamentos do curso sem deixar buraco em lógica e estrutura de dados.</p>
+        </li>
+        <li>
+          <h3>Sair do exercício</h3>
+          <p>Levar o que eu estudo para um projeto de verdade, publicado e usado por alguém além de mim.</p>
+        </li>
+        <li>
+          <h3>Primeiro estágio</h3>
+          <p>Entrar em um time de desenvolvimento e aprender como as coisas funcionam fora da sala de aula.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bloco" id="contato">
+      <h2 class="titulo"><span class="marcador"></span> Fala comigo</h2>
+      <p class="apoio">Se quiser trocar ideia sobre curso, projeto ou basquete, é só chamar.</p>
+      <ul class="contatos">
+        <li>
+          <i class="fa-regular fa-envelope"></i>
+          <span>E-mail</span>
+          <a href="mailto:miguelhenri383@gmail.com.br">miguelhenri383@gmail.com.br</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+          <a href="https://github.com/miguelhenri201" target="_blank" rel="noopener">github.com/miguelhenri201</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="rodape">
+      <p class="rodape-nome">Miguel Henrique Oliveira Santos</p>
+      <p>RGM 47174480 &middot; Engenharia de Software</p>
+      <p class="rodape-fim">&copy; 2026 Todos os direitos pertencentes a Miguel Henrique Oliveira Santos</p>
+    </footer>
+
+  </main>
+
+</div>
+
+<a class="topo" id="topo" href="#inicio" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
